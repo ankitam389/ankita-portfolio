@@ -78,10 +78,23 @@ ankita-portfolio/
 │   ├── journey.png
 │   ├── projects.png
 │   └── projects/
+│       ├── bioscope.png
+│       ├── gesture.png
+│       ├── hvsna.png
+│       ├── placeholder.png
+│       └── soilsense.png
 ├── design_docs/
 │   ├── design-document.md
 │   ├── mockups/
+│   │   ├── HomePage_Mockup.png
+│   │   ├── JourneyPage_Mockup.png
+│   │   └── ProjectsPage_Mockup.png
 │   └── wireframes/
+│       ├── HomePage_Wireframe.png
+│       ├── JourneyPage_Wireframe.png
+│       └── ProjectsPage_Wireframe.png
+├── submissions/
+│   └── Thumbnail_500.png
 ├── eslint.config.js
 ├── package.json
 ├── LICENSE
