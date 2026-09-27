@@ -1,0 +1,73 @@
+.mesh {
+  margin: 0;
+  padding: var(--space-m);
+  background: var(--color-surface);
+  border: 1px solid var(--color-line);
+  border-radius: var(--radius-large);
+}
+
+.mesh__stage {
+  position: relative;
+  aspect-ratio: 4 / 3;
+  border-radius: var(--radius-small);
+  background-color: var(--color-stage);
+  background-image:
+    linear-gradient(var(--color-grid) 1px, transparent 1px),
+    linear-gradient(90deg, var(--color-grid) 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+
+.mesh__canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+  cursor: crosshair;
+}
+
+.mesh__controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-xs);
+  margin-top: var(--space-s);
+}
+
+.mesh__stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-l);
+  margin: var(--space-s) 0 var(--space-xs);
+}
+
+.mesh__stat dt {
+  font-family: var(--font-display);
+  font-size: 0.9rem;
+  color: var(--color-muted);
+}
+
+.mesh__stat dd {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: var(--step-2);
+  font-weight: 800;
+  font-variant-numeric: tabular-nums;
+}
+
+.mesh__dropped {
+  color: var(--color-danger);
+}
+
+.mesh__status {
+  font-family: var(--font-display);
+  font-weight: 600;
+  margin-bottom: var(--space-xs);
+}
+
+.mesh__status.mesh__status--attack {
+  color: var(--color-danger);
+}
+
+.mesh__caption {
+  color: var(--color-muted);
+  font-size: 0.95rem;
+  line-height: 1.55;
+}

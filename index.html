@@ -1,0 +1,421 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Ankita Mandalam | Software Engineer</title>
+    <meta name="author" content="Ankita Mandalam" />
+    <meta
+      name="description"
+      content="Ankita Mandalam is a software engineer and MS Computer Science student at Northeastern University, working across full-stack development, machine learning, and data engineering."
+    />
+    <meta name="theme-color" content="#16324f" />
+    <link rel="icon" href="./images/favicon.png" type="image/png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=Literata:opsz,wght@7..72,400;7..72,600&display=swap"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/mesh.css" />
+    <script type="module" src="./js/main.js"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to main content</a>
+
+    <header class="site-header">
+      <nav class="site-nav" aria-label="Main">
+        <a class="site-nav__brand" href="./index.html">
+          <img
+            class="site-nav__logo"
+            src="./images/favicon.png"
+            alt=""
+            width="32"
+            height="32"
+          />
+          <span>Ankita Mandalam</span>
+        </a>
+        <button
+          class="site-nav__toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="site-menu"
+        >
+          Menu
+        </button>
+        <ul class="site-nav__menu" id="site-menu">
+          <li>
+            <a class="site-nav__link" href="./index.html" aria-current="page"
+              >Home</a
+            >
+          </li>
+          <li><a class="site-nav__link" href="./projects.html">Projects</a></li>
+          <li><a class="site-nav__link" href="./journey.html">Journey</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="page" id="main">
+      <section class="hero">
+        <div class="hero__intro">
+          <h1 class="hero__title">Ankita Mandalam</h1>
+          <p class="hero__lede">
+            I'm a software engineer working across full-stack development,
+            machine learning, and data engineering, and I like to build
+            technology that makes people's lives a little easier. I've developed
+            production tools at Motorola Solutions and Aon, and published
+            research on real-time sign language recognition and IoT network
+            security.
+          </p>
+          <p class="hero__meta">
+            MS Computer Science at Northeastern University, Boston. Graduating
+            May 2027 and looking for full-time software engineering roles.
+          </p>
+          <div class="hero__actions">
+            <a class="button button--primary" href="./projects.html"
+              >Explore my work</a
+            >
+            <a
+              class="button button--secondary"
+              href="https://www.linkedin.com/in/ankitavm/"
+              rel="noopener"
+              >LinkedIn</a
+            >
+          </div>
+        </div>
+
+        <figure class="mesh">
+          <div class="mesh__stage">
+            <canvas
+              class="mesh__canvas"
+              width="640"
+              height="480"
+              role="img"
+              aria-label="Animated simulation of a wireless sensor network. Small circles are sensor nodes, the square is the border router, and dots moving along the lines are data packets."
+            ></canvas>
+          </div>
+          <div class="mesh__controls">
+            <button class="button button--danger mesh__attack" type="button">
+              Launch sinkhole attack
+            </button>
+            <button class="button button--quiet mesh__reset" type="button">
+              Reset network
+            </button>
+            <button
+              class="button button--quiet mesh__pause"
+              type="button"
+              aria-pressed="false"
+            >
+              Pause
+            </button>
+          </div>
+          <dl class="mesh__stats">
+            <div class="mesh__stat">
+              <dt>Delivered</dt>
+              <dd class="mesh__delivered">0</dd>
+            </div>
+            <div class="mesh__stat">
+              <dt>Swallowed by attacker</dt>
+              <dd class="mesh__dropped">0</dd>
+            </div>
+            <div class="mesh__stat">
+              <dt>Delivery rate</dt>
+              <dd class="mesh__rate">100%</dd>
+            </div>
+          </dl>
+          <p class="mesh__status" aria-live="polite">
+            The network is healthy. Every packet finds its way to the router.
+          </p>
+          <figcaption class="mesh__caption">
+            This is a low-power IoT network running RPL routing. Each sensor
+            forwards data toward the border router. Click any sensor (or use the
+            button) to turn it into a sinkhole that lies about its distance to
+            the router, and watch its neighbors hand it their traffic. I
+            designed and measured a hybrid version of this attack in my
+            <a href="./projects.html#hvsna">IEEE NKCon 2023 paper</a>.
+          </figcaption>
+        </figure>
+      </section>
+
+      <section class="section">
+        <h2 class="section__title">What I do</h2>
+        <div class="focus-grid">
+          <article class="focus">
+            <h3 class="focus__title">Full-stack engineering</h3>
+            <p class="focus__text">
+              Production web tools with the checks that keep bad data and unsafe
+              commands out: validation, previews before commit, and guarded
+              workflows.
+            </p>
+            <p class="focus__tools">Django, Angular, TypeScript, REST APIs</p>
+          </article>
+          <article class="focus">
+            <h3 class="focus__title">AI and machine learning</h3>
+            <p class="focus__text">
+              Systems that recognize sign language in real time, answer
+              biomedical questions with citations, and help customers choose the
+              right compost.
+            </p>
+            <p class="focus__tools">PyTorch, OpenCV, MediaPipe, RAG, NLP</p>
+          </article>
+          <article class="focus">
+            <h3 class="focus__title">Data and systems</h3>
+            <p class="focus__text">
+              Fast, reliable SQL pipelines over millions of records, and
+              research on how routing in low-power IoT networks can be attacked.
+            </p>
+            <p class="focus__tools">SQL Server, PostgreSQL, Contiki OS, C</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2 class="section__title">Experience</h2>
+        <ol class="timeline">
+          <li class="timeline__item">
+            <p class="timeline__when">May 2026 to Aug 2026</p>
+            <div class="timeline__body">
+              <h3 class="timeline__role">
+                Full Stack Software Engineer Intern, Motorola Solutions
+              </h3>
+              <p class="timeline__where">Waltham, MA</p>
+              <ul class="timeline__points">
+                <li>
+                  Built 5 Django support tools for a production drone operations
+                  platform, so support staff can recover corrupted flight
+                  datasets themselves through validation, reconciliation, and
+                  preview-before-commit workflows.
+                </li>
+                <li>
+                  Integrated a third-party video streaming REST API over OAuth2
+                  to match flights to livestream channels, check recording
+                  state, and restart stalled transcodes one at a time or in
+                  bulk, with per-recording success, skip, and failure reporting.
+                </li>
+                <li>
+                  Implemented server-side redaction of tokenized media URIs and
+                  guarded data-replacement workflows that protect playback links
+                  and block invalid production updates.
+                </li>
+                <li>
+                  Developed geofence-aware Angular controls that derive safe
+                  altitude defaults from live drone state, validate limits
+                  before a command is sent, and support metric and imperial
+                  units in English and Spanish.
+                </li>
+                <li>
+                  Built real-time flight-target and sharing features with
+                  Angular, TypeScript, RxJS, and ArcGIS SceneView, showing
+                  mission targets, live speed, address, ETA, and link state, and
+                  resolved multi-waypoint targeting and reactive form race
+                  conditions.
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="timeline__item">
+            <p class="timeline__when">Jan 2025 to Jul 2025</p>
+            <div class="timeline__body">
+              <h3 class="timeline__role">Data Engineering Intern, Aon</h3>
+              <p class="timeline__where">Bangalore, India</p>
+              <ul class="timeline__points">
+                <li>
+                  Developed and optimized 20+ production SQL modules and
+                  scripts, reducing processing time by 98% across large
+                  enterprise data workflows.
+                </li>
+                <li>
+                  Engineered SQL data-processing workflows with validation and
+                  error handling, integrating 10M+ records across multiple
+                  enterprise data sources.
+                </li>
+                <li>
+                  Broke monolithic SQL workflows into reusable components and
+                  automated recurring tasks, eliminating 70+ manual hours a
+                  month.
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="timeline__item">
+            <p class="timeline__when">Aug 2024 to Dec 2024</p>
+            <div class="timeline__body">
+              <h3 class="timeline__role">
+                Teaching Assistant, Machine Learning, PES University
+              </h3>
+              <p class="timeline__where">Bangalore, India</p>
+              <ul class="timeline__points">
+                <li>
+                  Led hands-on lab sessions for 120+ students on Python
+                  programming, debugging, and performance analysis.
+                </li>
+                <li>
+                  Mentored student teams building end-to-end software projects,
+                  from requirements through testing and deployment.
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ol>
+      </section>
+
+      <section class="section">
+        <h2 class="section__title">Research and projects</h2>
+        <p class="section__intro">
+          Two research publications and a range of applied AI and full-stack
+          projects. Each one has a full write-up on the projects page.
+        </p>
+        <div class="card-grid">
+          <article class="card">
+            <img
+              class="card__image"
+              src="./images/projects/gesture.png"
+              alt="Illustration of a person signing hello at a desk while an on-screen Indian Sign Language translator detects the gesture, shows the text Hello! How are you?, and offers a button to play the audio."
+              width="1600"
+              height="1000"
+              loading="lazy"
+            />
+            <div class="card__body">
+              <p class="card__kind">Publication, ICCEE 2025</p>
+              <h3 class="card__title">Sign language to speech in real time</h3>
+              <p class="card__text">
+                Recognizes 94 Indian Sign Language gestures from a webcam and
+                speaks them in six languages, in under 300 ms.
+              </p>
+              <a class="card__link" href="./projects.html#sign-language"
+                >Read the full write-up</a
+              >
+            </div>
+          </article>
+          <article class="card">
+            <img
+              class="card__image"
+              src="./images/projects/hvsna.png"
+              alt="Diagram of an RPL sensor network where a red attacker node falsely claims rank 1 and version 5, pulling traffic from tricked nodes and dropping their packets, while the remaining nodes still route to the root."
+              width="1600"
+              height="1000"
+              loading="lazy"
+            />
+            <div class="card__body">
+              <p class="card__kind">Publication, IEEE NKCon 2023</p>
+              <h3 class="card__title">HVSNA: a hybrid attack on RPL</h3>
+              <p class="card__text">
+                A new attack combining version-number and sinkhole techniques
+                against the routing protocol used by IoT sensor networks.
+              </p>
+              <a class="card__link" href="./projects.html#hvsna"
+                >Read the full write-up</a
+              >
+            </div>
+          </article>
+          <article class="card">
+            <img
+              class="card__image"
+              src="./images/projects/bioscope.png"
+              alt="Diagram of the BioScope pipeline: a user asks how metformin affects prolactin levels, the system finds papers in PubMed, tags biomedical entities, classifies the question and writes a response, and returns a grounded answer with cited sources."
+              width="1600"
+              height="1000"
+              loading="lazy"
+            />
+            <div class="card__body">
+              <p class="card__kind">Project</p>
+              <h3 class="card__title">BioScope</h3>
+              <p class="card__text">
+                Biomedical question answering that grounds every answer in cited
+                literature using retrieval-augmented generation.
+              </p>
+              <a class="card__link" href="./projects.html#bioscope"
+                >Read the full write-up</a
+              >
+            </div>
+          </article>
+          <article class="card">
+            <img
+              class="card__image"
+              src="./images/projects/soilsense.png"
+              alt="Illustration of a gardener at a computer using a compost platform that shows compost bags ready for delivery, a nutrient report, and an AI chatbot recommending compost for tomato plants."
+              width="1600"
+              height="1000"
+              loading="lazy"
+            />
+            <div class="card__body">
+              <p class="card__kind">Project</p>
+              <h3 class="card__title">SoilSense</h3>
+              <p class="card__text">
+                A platform that turns city food waste into compost for urban
+                gardeners, with nutrient reports and an AI horticulture chatbot.
+              </p>
+              <a class="card__link" href="./projects.html#soilsense"
+                >Read the full write-up</a
+              >
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2 class="section__title">Skills</h2>
+        <dl class="skills">
+          <div class="skills__row">
+            <dt>Languages</dt>
+            <dd>Python, Java, JavaScript, TypeScript, SQL, C</dd>
+          </div>
+          <div class="skills__row">
+            <dt>Backend and web</dt>
+            <dd>Django, Flask, REST APIs, Angular, React, RxJS</dd>
+          </div>
+          <div class="skills__row">
+            <dt>Data</dt>
+            <dd>MySQL, PostgreSQL, SQL Server, MongoDB, Pandas, NumPy</dd>
+          </div>
+          <div class="skills__row">
+            <dt>Machine learning</dt>
+            <dd>
+              PyTorch, TensorFlow, scikit-learn, OpenCV, MediaPipe, RAG, NLP
+            </dd>
+          </div>
+          <div class="skills__row">
+            <dt>Cloud and tools</dt>
+            <dd>AWS (EC2, S3, Lambda), Docker, Git, CI/CD</dd>
+          </div>
+        </dl>
+      </section>
+
+      <section class="section section--contact" id="contact">
+        <h2 class="section__title">Get in touch</h2>
+        <p>
+          I am open to full-time software engineering roles starting in 2027.
+          LinkedIn is the fastest way to reach me.
+        </p>
+        <ul class="contact">
+          <li class="contact__item">
+            <span class="contact__label">LinkedIn</span>
+            <a
+              class="contact__link"
+              href="https://www.linkedin.com/in/ankitavm/"
+              rel="noopener"
+              >linkedin.com/in/ankitavm</a
+            >
+          </li>
+          <li class="contact__item">
+            <span class="contact__label">GitHub</span>
+            <a
+              class="contact__link"
+              href="https://github.com/ankitam389/"
+              rel="noopener"
+              >github.com/ankitam389</a
+            >
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>
+        &copy; <span class="site-footer__year">2026</span> Ankita Mandalam.
+        Built with plain HTML, CSS, and JavaScript modules.
+      </p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,345 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Research and Projects | Ankita Mandalam</title>
+    <meta name="author" content="Ankita Mandalam" />
+    <meta
+      name="description"
+      content="Research publications and projects by Ankita Mandalam: real-time sign language to speech, a hybrid attack on RPL IoT networks, a biomedical RAG system, and the SoilSense compost platform."
+    />
+    <meta name="theme-color" content="#16324f" />
+    <link rel="icon" href="./images/favicon.png" type="image/png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=Literata:opsz,wght@7..72,400;7..72,600&display=swap"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <script type="module" src="./js/main.js"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to main content</a>
+
+    <header class="site-header">
+      <nav class="site-nav" aria-label="Main">
+        <a class="site-nav__brand" href="./index.html">
+          <img
+            class="site-nav__logo"
+            src="./images/favicon.png"
+            alt=""
+            width="32"
+            height="32"
+          />
+          <span>Ankita Mandalam</span>
+        </a>
+        <button
+          class="site-nav__toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="site-menu"
+        >
+          Menu
+        </button>
+        <ul class="site-nav__menu" id="site-menu">
+          <li><a class="site-nav__link" href="./index.html">Home</a></li>
+          <li>
+            <a class="site-nav__link" href="./projects.html" aria-current="page"
+              >Projects</a
+            >
+          </li>
+          <li><a class="site-nav__link" href="./journey.html">Journey</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="page" id="main">
+      <section class="page-intro page-intro--divided">
+        <h1 class="page-intro__title">Research and projects</h1>
+        <p class="page-intro__lede">
+          Two research publications and the projects I have built along the way.
+          Each entry covers the problem, what I built, and what it achieved.
+          Filter by the kind of work you care about.
+        </p>
+      </section>
+
+      <div class="filter" role="group" aria-label="Filter by topic">
+        <button
+          class="filter__button"
+          type="button"
+          data-filter="all"
+          aria-pressed="true"
+        >
+          All
+        </button>
+        <button
+          class="filter__button"
+          type="button"
+          data-filter="ml"
+          aria-pressed="false"
+        >
+          Machine learning
+        </button>
+        <button
+          class="filter__button"
+          type="button"
+          data-filter="web"
+          aria-pressed="false"
+        >
+          Full stack
+        </button>
+        <button
+          class="filter__button"
+          type="button"
+          data-filter="security"
+          aria-pressed="false"
+        >
+          Networks and security
+        </button>
+      </div>
+      <p class="filter__count" aria-live="polite">Showing 4 projects</p>
+
+      <section class="project-section">
+        <h2 class="project-section__title">Research publications</h2>
+        <div class="project-list">
+          <article class="project" data-tags="ml web" id="sign-language">
+            <div class="project__media project__media--warm">
+              <img
+                class="project__image"
+                src="./images/projects/gesture.png"
+                alt="Illustration of a person signing hello at a desk while an on-screen Indian Sign Language translator detects the gesture, shows the text Hello! How are you?, and offers a button to play the audio."
+                width="1600"
+                height="1000"
+              />
+            </div>
+            <div class="project__body">
+              <h3 class="project__title">
+                Real-Time Speech Generation of Regional Languages Using Indian
+                Sign Language
+              </h3>
+              <p class="project__venue">
+                ICCEE 2025, 18th International Conference on Computer and
+                Electrical Engineering, Singapore. Published in
+                <cite>Advances in Transdisciplinary Engineering</cite>,
+                September 2025.
+              </p>
+              <p class="project__tags">
+                Python, OpenCV, MediaPipe, GRU, Flask, speech synthesis
+              </p>
+              <p>
+                Deaf and hard-of-hearing signers often need an interpreter to
+                talk with people who do not know sign language, and most tools
+                ignore regional languages entirely. This system watches a
+                webcam, recognizes Indian Sign Language as it is signed, and
+                speaks the result aloud in the listener's language.
+              </p>
+              <ul class="project__points">
+                <li>
+                  Extracts 84 hand keypoints per frame with MediaPipe and trains
+                  a GRU sequence model on 94 gesture labels with 240 videos
+                  each.
+                </li>
+                <li>Reaches 89.45% accuracy on the held-out test set.</li>
+                <li>
+                  A Flask service chains recognition, translation, and speech
+                  synthesis across six languages, with end-to-end latency under
+                  300 ms.
+                </li>
+              </ul>
+              <p class="project__links">
+                <a
+                  href="https://journals.sagepub.com/doi/book/10.3233/ATDE77"
+                  rel="noopener"
+                  >View the proceedings volume</a
+                >
+              </p>
+            </div>
+          </article>
+
+          <article class="project" data-tags="security" id="hvsna">
+            <div class="project__media project__media--sky">
+              <img
+                class="project__image"
+                src="./images/projects/hvsna.png"
+                alt="Diagram of an RPL sensor network where a red attacker node falsely claims rank 1 and version 5, pulling traffic from tricked nodes and dropping their packets, while the remaining nodes still route to the root."
+                width="1600"
+                height="1000"
+              />
+            </div>
+            <div class="project__body">
+              <h3 class="project__title">
+                HVSNA: An Advanced Hybrid Attack on RPL-Based Low-Power Wireless
+                Networks
+              </h3>
+              <p class="project__venue">
+                2023 IEEE North Karnataka Subsection Flagship International
+                Conference (NKCon), Belagavi, India, November 2023. In IEEE
+                Xplore since January 2024.
+              </p>
+              <p class="project__tags">Contiki OS, Cooja, C, RPL</p>
+              <p>
+                RPL is the routing protocol that many IoT sensor networks rely
+                on. I designed a new attack that combines two known weaknesses,
+                the version-number attack and the sinkhole attack, and measured
+                how badly the combination damages a network.
+              </p>
+              <ul class="project__points">
+                <li>
+                  Modified the RPL protocol stack in Contiki OS to implement the
+                  hybrid attack.
+                </li>
+                <li>
+                  Ran large-scale simulations with 20 to 50 wireless nodes,
+                  measuring latency, power consumption, network stability, and
+                  resilience under attack.
+                </li>
+                <li>
+                  The interactive network on my
+                  <a href="./index.html">home page</a> shows a simplified
+                  sinkhole in action.
+                </li>
+              </ul>
+              <p class="project__links">
+                <a
+                  href="https://doi.org/10.1109/NKCon59507.2023.10396649"
+                  rel="noopener"
+                  >Read the paper (DOI 10.1109/NKCon59507.2023.10396649)</a
+                >
+              </p>
+            </div>
+          </article>
+        </div>
+        <p class="project-section__empty" hidden>
+          No publications match this topic. Choose All to see everything.
+        </p>
+      </section>
+
+      <section class="project-section">
+        <h2 class="project-section__title">Projects</h2>
+        <div class="project-list">
+          <article class="project" data-tags="ml" id="bioscope">
+            <div class="project__media project__media--cool">
+              <img
+                class="project__image"
+                src="./images/projects/bioscope.png"
+                alt="Diagram of the BioScope pipeline: a user asks how metformin affects prolactin levels, the system finds papers in PubMed, tags biomedical entities, classifies the question and writes a response, and returns a grounded answer with cited sources."
+                width="1600"
+                height="1000"
+              />
+            </div>
+            <div class="project__body">
+              <h3 class="project__title">
+                BioScope: biomedical question answering
+              </h3>
+              <h4 class="project__label">Problem</h4>
+              <p>
+                Language models can sound confident about medicine while being
+                wrong. BioScope answers biomedical questions only from retrieved
+                literature and shows the citation behind every claim.
+              </p>
+              <h4 class="project__label">Technologies</h4>
+              <p>Python, RAG, UMLS, TF-IDF, scikit-learn, Gemini</p>
+              <h4 class="project__label">Approach and results</h4>
+              <ul class="project__points">
+                <li>
+                  Combines semantic retrieval with UMLS entity linking, so
+                  synonyms of the same medical concept retrieve the same
+                  evidence.
+                </li>
+                <li>
+                  Routes each question with a 7-class classifier trained on 700
+                  labeled examples; LinearSVC reached 97.14% cross-validation
+                  accuracy.
+                </li>
+                <li>
+                  Generates citation-backed answers with an LLM, improving how
+                  well each answer is grounded in its sources.
+                </li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="project" data-tags="web ml" id="soilsense">
+            <div class="project__media project__media--warm">
+              <img
+                class="project__image"
+                src="./images/projects/soilsense.png"
+                alt="Illustration of a gardener at a computer using a compost platform that shows compost bags ready for delivery, a nutrient report, and an AI chatbot recommending compost for tomato plants."
+                width="1600"
+                height="1000"
+              />
+            </div>
+            <div class="project__body">
+              <h3 class="project__title">
+                SoilSense: turning city food waste into compost
+              </h3>
+              <p class="project__venue">
+                Built in 24 hours at the Override hackathon, 2023.
+              </p>
+              <h4 class="project__label">Problem</h4>
+              <p>
+                It started with neighbors in our apartment complex whose plants
+                kept dying, often because the soil lacked nutrients, and the
+                soil they needed was not sold in stores or online. Meanwhile,
+                cities throw away enormous amounts of organic waste. SoilSense
+                connects the two with a web platform that follows waste from
+                collection to a bag of compost for urban gardeners.
+              </p>
+              <h4 class="project__label">Technologies</h4>
+              <p>Python, MySQL, OpenAI API</p>
+              <h4 class="project__label">Approach and results</h4>
+              <ul class="project__points">
+                <li>
+                  Analyzes the contents of collected waste and generates a full
+                  nutrient panel for each batch, covering nitrogen, carbon, and
+                  phosphorus.
+                </li>
+                <li>
+                  Tracks each batch through blending to target nutrient ratios,
+                  packaging, and sales, with automated data processing.
+                </li>
+                <li>
+                  Validates data at every step so errors are caught before they
+                  reach reports or sales records.
+                </li>
+                <li>
+                  A horticulture chatbot built on the OpenAI API answers
+                  customer questions about each product's contents, usage, and
+                  benefits, using the platform's own product and nutrient data.
+                </li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="project project--placeholder" data-tags="">
+            <div class="project__media project__media--placeholder">
+              <img
+                class="project__image"
+                src="./images/projects/placeholder.png"
+                alt="Empty dashed frame with a plus sign, marking a project still to come."
+                width="1600"
+                height="1000"
+              />
+            </div>
+            <div class="project__body">
+              <h3 class="project__title">Next project</h3>
+              <p>A write-up of my next project is coming soon.</p>
+            </div>
+          </article>
+        </div>
+        <p class="project-section__empty" hidden>
+          No projects match this topic yet. Choose All to see everything.
+        </p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>
+        &copy; <span class="site-footer__year">2026</span> Ankita Mandalam.
+        Built with plain HTML, CSS, and JavaScript modules.
+      </p>
+    </footer>
+  </body>
+</html>

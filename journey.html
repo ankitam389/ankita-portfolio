@@ -1,0 +1,474 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Journey | Ankita Mandalam</title>
+    <meta name="author" content="Ankita Mandalam" />
+    <meta
+      name="description"
+      content="The milestones that shaped Ankita Mandalam: computer science at PES University, research at IEEE NKCon and ICCEE, teaching, internships at Aon and Motorola Solutions, and an MS at Northeastern."
+    />
+    <meta name="theme-color" content="#16324f" />
+    <link rel="icon" href="./images/favicon.png" type="image/png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,600;1,7..72,400&display=swap"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/journey.css" />
+    <script type="module" src="./js/main.js"></script>
+    <script type="module" src="./js/journey.js"></script>
+  </head>
+  <body class="journey-page">
+    <a class="skip-link" href="#main">Skip to main content</a>
+
+    <header class="site-header">
+      <nav class="site-nav" aria-label="Main">
+        <a class="site-nav__brand" href="./index.html">
+          <img
+            class="site-nav__logo"
+            src="./images/favicon.png"
+            alt=""
+            width="32"
+            height="32"
+          />
+          <span>Ankita Mandalam</span>
+        </a>
+        <button
+          class="site-nav__toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="site-menu"
+        >
+          Menu
+        </button>
+        <ul class="site-nav__menu" id="site-menu">
+          <li><a class="site-nav__link" href="./index.html">Home</a></li>
+          <li><a class="site-nav__link" href="./projects.html">Projects</a></li>
+          <li>
+            <a class="site-nav__link" href="./journey.html" aria-current="page"
+              >Journey</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="page journey-main" id="main">
+      <section class="journey-hero">
+        <div class="journey-hero__text">
+          <p class="journey-hero__eyebrow">
+            How I got here <span class="journey-hero__range">2021 to 2027</span>
+          </p>
+          <h1 class="journey-hero__title">
+            <span class="journey-hero__line">From Bangalore</span>
+            <span class="journey-hero__line"
+              ><em class="journey-hero__to">to</em> Boston</span
+            >
+          </h1>
+          <p class="journey-hero__lede">
+            It started with a first computer vision experiment and led to drone
+            software at Motorola Solutions. These are the milestones that shaped
+            the engineer I am, in the order they happened.
+          </p>
+        </div>
+
+        <aside class="journey-hero__panel" aria-label="The journey at a glance">
+          <p class="journey-route">
+            <span class="journey-route__stop">
+              <span class="journey-route__city">Bangalore</span>
+              <span class="journey-route__years">2021 to 2025</span>
+            </span>
+            <span class="journey-route__path" aria-hidden="true"></span>
+            <span class="journey-route__stop journey-route__stop--end">
+              <span class="journey-route__city">Boston</span>
+              <span class="journey-route__years">2025 onward</span>
+            </span>
+          </p>
+          <dl class="journey-glance">
+            <div class="journey-glance__item">
+              <dt>Publications</dt>
+              <dd>2</dd>
+            </div>
+            <div class="journey-glance__item">
+              <dt>Internships</dt>
+              <dd>2</dd>
+            </div>
+            <div class="journey-glance__item">
+              <dt>Students taught</dt>
+              <dd>120+</dd>
+            </div>
+            <div class="journey-glance__item">
+              <dt>Chapters</dt>
+              <dd>4</dd>
+            </div>
+          </dl>
+        </aside>
+      </section>
+
+      <div class="journey-layout">
+        <nav class="journey-rail" aria-label="Chapters">
+          <p class="journey-rail__label">Chapters</p>
+          <ol class="journey-rail__list">
+            <li>
+              <a class="journey-rail__link" href="#chapter-1">
+                <span class="journey-rail__num">01</span>
+                <span class="journey-rail__name">Starting out</span>
+                <span class="journey-rail__years">Sep 2021</span>
+              </a>
+            </li>
+            <li>
+              <a class="journey-rail__link" href="#chapter-2">
+                <span class="journey-rail__num">02</span>
+                <span class="journey-rail__name">Building and research</span>
+                <span class="journey-rail__years">Oct 2023 to Jan 2024</span>
+              </a>
+            </li>
+            <li>
+              <a class="journey-rail__link" href="#chapter-3">
+                <span class="journey-rail__num">03</span>
+                <span class="journey-rail__name">Teaching and industry</span>
+                <span class="journey-rail__years">Aug 2024 to Jun 2025</span>
+              </a>
+            </li>
+            <li>
+              <a class="journey-rail__link" href="#chapter-4">
+                <span class="journey-rail__num">04</span>
+                <span class="journey-rail__name">Boston</span>
+                <span class="journey-rail__years">Aug 2025 to May 2027</span>
+              </a>
+            </li>
+          </ol>
+        </nav>
+
+        <div class="journey-timeline">
+          <section class="journey-chapter" id="chapter-1">
+            <header class="journey-chapter__head">
+              <span class="journey-chapter__node" aria-hidden="true">01</span>
+              <p class="journey-chapter__eyebrow">Chapter 01 · Sep 2021</p>
+              <h2 class="journey-chapter__title">Starting out</h2>
+              <p class="journey-chapter__summary">
+                A computer science degree in Bangalore, and a first try at
+                computer vision.
+              </p>
+              <span class="journey-chapter__year" aria-hidden="true">2021</span>
+            </header>
+            <ol class="journey-milestones">
+              <li class="journey-milestone">
+                <p class="journey-milestone__date">
+                  <time datetime="2021-09">Sep 2021</time>
+                </p>
+                <span
+                  class="journey-milestone__marker"
+                  aria-hidden="true"
+                ></span>
+                <div class="journey-milestone__body">
+                  <p class="journey-milestone__meta">
+                    Education · Bangalore, India
+                  </p>
+                  <h3 class="journey-milestone__title">
+                    Started computer science
+                  </h3>
+                  <p>
+                    Began my B.Tech in Computer Science at PES University in
+                    Bangalore, and started experimenting with computer vision
+                    the same year. That curiosity later became my sign language
+                    research.
+                  </p>
+                </div>
+              </li>
+            </ol>
+          </section>
+
+          <section class="journey-chapter" id="chapter-2">
+            <header class="journey-chapter__head">
+              <span class="journey-chapter__node" aria-hidden="true">02</span>
+              <p class="journey-chapter__eyebrow">
+                Chapter 02 · Oct 2023 to Jan 2024
+              </p>
+              <h2 class="journey-chapter__title">Building and research</h2>
+              <p class="journey-chapter__summary">
+                A hackathon project, then my first paper and its publication.
+              </p>
+              <span class="journey-chapter__year" aria-hidden="true">2023</span>
+            </header>
+            <ol class="journey-milestones">
+              <li class="journey-milestone">
+                <p class="journey-milestone__date">
+                  <time datetime="2023-10">Oct 2023</time>
+                </p>
+                <span
+                  class="journey-milestone__marker"
+                  aria-hidden="true"
+                ></span>
+                <div class="journey-milestone__body">
+                  <p class="journey-milestone__meta">
+                    Project · Override hackathon
+                  </p>
+                  <h3 class="journey-milestone__title">
+                    Built SoilSense in 24 hours
+                  </h3>
+                  <p>
+                    Neighbors kept losing their plants to poor soil. At the
+                    Override hackathon, our team built a platform that turns
+                    city food waste into compost, with a nutrient report for
+                    every batch and an AI chatbot for customers.
+                  </p>
+                  <a class="journey-link" href="./projects.html#soilsense"
+                    >Read about SoilSense</a
+                  >
+                </div>
+              </li>
+              <li class="journey-milestone journey-milestone--major">
+                <p class="journey-milestone__date">
+                  <time datetime="2023-11-19">Nov 2023</time>
+                </p>
+                <span
+                  class="journey-milestone__marker"
+                  aria-hidden="true"
+                ></span>
+                <div class="journey-milestone__body">
+                  <p class="journey-milestone__meta">
+                    Research · Belagavi, India
+                  </p>
+                  <h3 class="journey-milestone__title">
+                    First paper at an IEEE conference
+                  </h3>
+                  <p>
+                    My research on HVSNA, a hybrid attack on RPL-based IoT
+                    networks, appeared at the 2023 IEEE NKCon conference in
+                    Belagavi, India.
+                  </p>
+                  <a class="journey-link" href="./projects.html#hvsna"
+                    >Read about HVSNA</a
+                  >
+                </div>
+              </li>
+              <li class="journey-milestone">
+                <p class="journey-milestone__date">
+                  <time datetime="2024-01-24">Jan 2024</time>
+                </p>
+                <span
+                  class="journey-milestone__marker"
+                  aria-hidden="true"
+                ></span>
+                <div class="journey-milestone__body">
+                  <p class="journey-milestone__meta">Research · IEEE Xplore</p>
+                  <h3 class="journey-milestone__title">
+                    Published in IEEE Xplore
+                  </h3>
+                  <p>
+                    The HVSNA paper was added to IEEE Xplore, making the work
+                    citable by other researchers.
+                  </p>
+                </div>
+              </li>
+            </ol>
+          </section>
+
+          <section class="journey-chapter" id="chapter-3">
+            <header class="journey-chapter__head">
+              <span class="journey-chapter__node" aria-hidden="true">03</span>
+              <p class="journey-chapter__eyebrow">
+                Chapter 03 · Aug 2024 to Jun 2025
+              </p>
+              <h2 class="journey-chapter__title">Teaching and industry</h2>
+              <p class="journey-chapter__summary">
+                Leading labs, my first industry role, a second paper, and
+                graduation.
+              </p>
+              <span class="journey-chapter__year" aria-hidden="true">2024</span>
+            </header>
+            <ol class="journey-milestones">
+              <li class="journey-milestone">
+                <p class="journey-milestone__date">
+                  <time datetime="2024-08">Aug 2024</time>
+                </p>
+                <span
+                  class="journey-milestone__marker"
+                  aria-hidden="true"
+                ></span>
+                <div class="journey-milestone__body">
+                  <p class="journey-milestone__meta">
+                    Teaching · PES University
+                  </p>
+                  <h3 class="journey-milestone__title">
+                    Teaching machine learning
+                  </h3>
+                  <p>
+                    Became a teaching assistant for Machine Learning, leading
+                    labs for more than 120 students and mentoring teams through
+                    complete projects. Explaining ideas to others sharpened my
+                    own.
+                  </p>
+                </div>
+              </li>
+              <li class="journey-milestone journey-milestone--major">
+                <p class="journey-milestone__date">
+                  <time datetime="2025-01">Jan 2025</time>
+                </p>
+                <span
+                  class="journey-milestone__marker"
+                  aria-hidden="true"
+                ></span>
+                <div class="journey-milestone__body">
+                  <p class="journey-milestone__meta">
+                    Industry · Aon, Bangalore
+                  </p>
+                  <h3 class="journey-milestone__title">
+                    First industry role at Aon
+                  </h3>
+                  <p>
+                    As a data engineering intern, I optimized production SQL
+                    pipelines over more than 10 million records, cutting
+                    processing time by 98% and saving the team 70+ hours a
+                    month.
+                  </p>
+                </div>
+              </li>
+              <li class="journey-milestone journey-milestone--major">
+                <p class="journey-milestone__date">
+                  <time datetime="2025-06">Jun 2025</time>
+                </p>
+                <span
+                  class="journey-milestone__marker"
+                  aria-hidden="true"
+                ></span>
+                <div class="journey-milestone__body">
+                  <p class="journey-milestone__meta">
+                    Education and research · PES University, ICCEE 2025
+                  </p>
+                  <h3 class="journey-milestone__title">
+                    Completed my B.Tech and a second paper at ICCEE
+                  </h3>
+                  <p>
+                    Graduated from PES University. The same month, my paper on
+                    real-time speech generation from Indian Sign Language was
+                    part of ICCEE 2025 in Singapore.
+                  </p>
+                  <a class="journey-link" href="./projects.html#sign-language"
+                    >Read about the paper</a
+                  >
+                </div>
+              </li>
+            </ol>
+          </section>
+
+          <section class="journey-chapter" id="chapter-4">
+            <header class="journey-chapter__head">
+              <span class="journey-chapter__node" aria-hidden="true">04</span>
+              <p class="journey-chapter__eyebrow">
+                Chapter 04 · Aug 2025 to May 2027
+              </p>
+              <h2 class="journey-chapter__title">Boston</h2>
+              <p class="journey-chapter__summary">
+                Graduate school at Northeastern, production software at Motorola
+                Solutions, and what comes next.
+              </p>
+              <span class="journey-chapter__year" aria-hidden="true">2025</span>
+            </header>
+            <ol class="journey-milestones">
+              <li class="journey-milestone journey-milestone--major">
+                <p class="journey-milestone__date">
+                  <time datetime="2025-08">Aug 2025</time>
+                </p>
+                <span
+                  class="journey-milestone__marker"
+                  aria-hidden="true"
+                ></span>
+                <div class="journey-milestone__body">
+                  <p class="journey-milestone__meta">
+                    Education · Northeastern University, Boston
+                  </p>
+                  <h3 class="journey-milestone__title">
+                    Moved to Boston for my MS
+                  </h3>
+                  <p>
+                    Started my Master of Science in Computer Science at
+                    Northeastern University.
+                  </p>
+                </div>
+              </li>
+              <li class="journey-milestone">
+                <p class="journey-milestone__date">
+                  <time datetime="2025-09-16">Sep 2025</time>
+                </p>
+                <span
+                  class="journey-milestone__marker"
+                  aria-hidden="true"
+                ></span>
+                <div class="journey-milestone__body">
+                  <p class="journey-milestone__meta">
+                    Research · Published online
+                  </p>
+                  <h3 class="journey-milestone__title">
+                    Second paper published
+                  </h3>
+                  <p>
+                    The sign language paper was published online in
+                    <cite>Advances in Transdisciplinary Engineering</cite>.
+                  </p>
+                </div>
+              </li>
+              <li class="journey-milestone journey-milestone--major">
+                <p class="journey-milestone__date">
+                  <time datetime="2026-05">May 2026</time>
+                </p>
+                <span
+                  class="journey-milestone__marker"
+                  aria-hidden="true"
+                ></span>
+                <div class="journey-milestone__body">
+                  <p class="journey-milestone__meta">
+                    Industry · Motorola Solutions, Waltham
+                  </p>
+                  <h3 class="journey-milestone__title">
+                    Production software at Motorola Solutions
+                  </h3>
+                  <p>
+                    As a full stack software engineer intern, I built support
+                    tools and safety-checked flight controls for a drone
+                    operations platform used in production.
+                  </p>
+                </div>
+              </li>
+              <li class="journey-milestone journey-milestone--future">
+                <p class="journey-milestone__date">
+                  <time datetime="2027-05">May 2027</time>
+                </p>
+                <span
+                  class="journey-milestone__marker"
+                  aria-hidden="true"
+                ></span>
+                <div class="journey-milestone__body">
+                  <p class="journey-milestone__meta">Next · Boston</p>
+                  <h3 class="journey-milestone__title">
+                    Graduating, and what comes next
+                  </h3>
+                  <p>
+                    I finish my MS in May 2027 and am looking for a full-time
+                    software engineering role where I can keep building systems
+                    that hold up in the real world.
+                  </p>
+                  <a class="journey-link" href="./index.html#contact"
+                    >Get in touch</a
+                  >
+                </div>
+              </li>
+            </ol>
+          </section>
+        </div>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <p>
+        &copy; <span class="site-footer__year">2026</span> Ankita Mandalam.
+        Built with plain HTML, CSS, and JavaScript modules.
+      </p>
+    </footer>
+  </body>
+</html>
