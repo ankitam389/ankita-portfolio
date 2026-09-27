@@ -80,7 +80,6 @@ ankita-portfolio/
 │   └── projects/
 ├── docs/
 │   ├── design-document.pdf
-│   ├── screenshot.png
 │   ├── mockups/
 │   └── wireframes/
 ├── eslint.config.js
