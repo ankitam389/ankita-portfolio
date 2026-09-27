@@ -79,7 +79,7 @@ ankita-portfolio/
 │   ├── projects.png
 │   └── projects/
 ├── docs/
-│   ├── design-document.pdf
+│   ├── design-document.md
 │   ├── mockups/
 │   └── wireframes/
 ├── eslint.config.js
@@ -89,8 +89,6 @@ ankita-portfolio/
 ```
 
 ## Instructions to build and run
-
-Requirements: [Node.js](https://nodejs.org/) 18 or newer and npm.
 
 1. Clone the repository:
 
