@@ -78,7 +78,7 @@ ankita-portfolio/
 │   ├── journey.png
 │   ├── projects.png
 │   └── projects/
-├── docs/
+├── design_docs/
 │   ├── design-document.md
 │   ├── mockups/
 │   └── wireframes/
@@ -125,7 +125,7 @@ All HTML files were validated by W3C and shows that there are no errors and warn
 
 - **Live site:** [https://ankitam389.github.io/ankita-portfolio/](https://ankitam389.github.io/ankita-portfolio/)
 - **Demo video:** YET TO ADD
-- **Design document:** [docs/design-document.md](./docs/design-document.md)
+- **Design document:** [design_docs/design-document.md](./design_docs/design-document.md)
 
 ## Use of generative AI
 
