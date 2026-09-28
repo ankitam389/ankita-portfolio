@@ -10,9 +10,13 @@ A personal portfolio built with vanilla HTML5, CSS3, and ES6 modules. It introdu
 - LinkedIn: [Ankita Mandalam](https://www.linkedin.com/in/ankitavm/)
 - BlueSky: [@ankitamandalam.bsky.social](https://bsky.app/profile/ankitamandalam.bsky.social)
 
-## Class link
+## Project resources
 
-[CS 5610 Web Development, Northeastern University](https://johnguerra.co/classes/webDevelopment_online_fall_2025/)
+- **Class Link:** [CS 5610 Web Development, Northeastern University](https://johnguerra.co/classes/webDevelopment_online_fall_2025/)
+- **Live site:** [https://ankitam389.github.io/ankita-portfolio/](https://ankitam389.github.io/ankita-portfolio/)
+- **Demo video:** [Personal Portfolio on Youtube](https://youtu.be/pbrHt-mJ9xU)
+- **Presentation Slides:** [Google Presentation Slides](https://docs.google.com/presentation/d/1-xgA1ebFN0Q2XC1_U7shzCKxV0EJoVw7xtmm9sxBi5M/edit?usp=sharing)
+- **Design document:** [design_docs/design-document.md](./design_docs/design-document.md)
 
 ## Project objective
 
@@ -94,7 +98,10 @@ ankita-portfolio/
 │       ├── JourneyPage_Wireframe.png
 │       └── ProjectsPage_Wireframe.png
 ├── submissions/
-│   └── Thumbnail_500.png
+│   ├── design-document.pdf
+│   ├── portfolio-presentation.pptx
+│   ├── thumbnail_500.png
+│   └── thumbnail.png
 ├── eslint.config.js
 ├── package.json
 ├── LICENSE
@@ -133,12 +140,6 @@ npm run format        # Apply Prettier formatting
 ```
 
 All HTML files were validated by W3C and shows that there are no errors and warnings.
-
-## Project resources
-
-- **Live site:** [https://ankitam389.github.io/ankita-portfolio/](https://ankitam389.github.io/ankita-portfolio/)
-- **Demo video:** YET TO ADD
-- **Design document:** [design_docs/design-document.md](./design_docs/design-document.md)
 
 ## Use of generative AI
 
