@@ -12,7 +12,7 @@ A personal portfolio built with vanilla HTML5, CSS3, and ES6 modules. It introdu
 
 ## Project resources
 
-- **Class Link:** [CS 5610 Web Development, Northeastern University](https://johnguerra.co/classes/webDevelopment_online_fall_2025/)
+- **Class Link:** [CS 5610 Web Development, Northeastern University](https://johnguerra.co/classes/webDevelopment_online_fall_2026/)
 - **Live site:** [https://ankitam389.github.io/ankita-portfolio/](https://ankitam389.github.io/ankita-portfolio/)
 - **Demo video:** [Personal Portfolio on Youtube](https://youtu.be/pbrHt-mJ9xU)
 - **Presentation Slides:** [Google Presentation Slides](https://docs.google.com/presentation/d/1-xgA1ebFN0Q2XC1_U7shzCKxV0EJoVw7xtmm9sxBi5M/edit?usp=sharing)
